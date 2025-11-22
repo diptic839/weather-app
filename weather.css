@@ -1,0 +1,107 @@
+/* BACKGROUND IMAGE */
+.weather-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  padding: 20px;
+  color: white;
+
+  /* Use uploaded screenshot as background */
+  background-image: url('https://images.pexels.com/photos/108941/pexels-photo-108941.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* SEARCH BAR */
+.search-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.search-box input {
+  width: 50%;
+  padding: 14px 20px;
+  border-radius: 30px 0 0 30px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #333;
+}
+
+.search-box button {
+  padding: 14px 18px;
+  background: white;
+  color: #555;
+  border: none;
+  border-radius: 0 30px 30px 0;
+  cursor: pointer;
+}
+
+/* MAIN CARD */
+.main-card {
+  margin-top: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  text-align: left;
+}
+
+.weather-main-info {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.weather-icon {
+  width: 120px;
+}
+
+.main-card h2 {
+  font-size: 54px;
+  margin: 0;
+}
+
+/* SIDE INFO PANEL */
+.side-info {
+  margin-left: 40px;
+  padding: 20px;
+  border-radius: 16px;
+  width: 200px;
+}
+
+/* GLASS EFFECT */
+.glass {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* FORECAST */
+.forecast-title {
+  margin-top: 30px;
+  font-size: 28px;
+}
+
+.forecast-scroll {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+.forecast-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.forecast-card {
+  min-width: 120px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 16px;
+}
